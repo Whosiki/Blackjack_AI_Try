@@ -1,0 +1,10 @@
+import random
+A1=["Ace","Hearts",1,11]
+A2=["Ace","Diamonds",1,11]
+A3=["Ace","Clubs",1,11]
+A4=["Ace","Spades",1,11]
+Two1=["Two","Hearts",2,2]
+Two2=["Two","Diamonds",2,2]
+Two3=["Two","Clubs",2,2]
+Two4=["Two","Spades",2,2]
+fulldeck=[]
