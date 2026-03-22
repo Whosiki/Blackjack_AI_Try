@@ -1,4 +1,5 @@
 import random
+import Botmodule
 fulldeck=[]
 multideck=[]
 deck="Deck"
@@ -52,3 +53,4 @@ elif p1score>p2score:
     print("Player 1 wins")
 else:
     print("Player 2 wins")
+Botmodule.oppchoice(multideck, p1score, p2score, maxvalue)
