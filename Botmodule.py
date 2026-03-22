@@ -3,11 +3,13 @@ def oppchoice(multideck,p1score,p2score,maxvalue):
     if p1score <= maxvalue:
         countlist=[0,0,0,0,0,0,0,0,0,0,0,0,0]
         place=0
+        deckleft=0
         while True:
             try:
                 card=multideck[place]
             except IndexError:
                 break
+            deckleft+=1
             checkcard=card[0]
             match checkcard:
                 case "Ace":
@@ -40,5 +42,10 @@ def oppchoice(multideck,p1score,p2score,maxvalue):
                     break
             place+=1
         print(countlist)
-
-
+        print(place)
+        print(deckleft)
+        if p1score >=p2score:
+            aimpointslow=p1score-p2score
+        else:
+            aimpointslow=1
+        aimpointshigh=maxvalue-p2score
